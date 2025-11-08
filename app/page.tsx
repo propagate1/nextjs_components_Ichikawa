@@ -1,8 +1,9 @@
-import ComponentFilter from "./components/ComponentFilter";
-import BlackSpace from "./components/BlackSpace";
+import Hero5000 from './components/Hero/Hero5000';
 
 export default function Home() {
-  return
-  <BlackSpace />
-  ;
+  return (
+    <div className="min-h-screen">
+      <Hero5000 />
+    </div>
+  );
 }
