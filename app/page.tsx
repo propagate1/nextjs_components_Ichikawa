@@ -1,4 +1,4 @@
-import HeroHeader5000 from './components/Hero/HeroHeader5000';
+import HeroHeader5000 from './components/Header/Header5000';
 import Hero5000 from './components/Hero/Hero5000';
 
 export default function Home() {
