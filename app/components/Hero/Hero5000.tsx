@@ -1,172 +1,465 @@
 'use client';
-
-// import Image from 'next/image';
-import { Hand } from 'lucide-react';
+import React from 'react';
+import Image from 'next/image';
+import { Phone } from 'lucide-react';
 
 export default function Hero5000() {
   return (
-    <div className="w-full top-0 bg-white relative overflow-hidden min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] flex items-center justify-center">
-      {/* Background Images - Optional, can be added later */}
-      <div className="absolute inset-0 z-0">
-        {/* Left Background - Caregiver/Nurse */}
-        <div className="absolute left-0 top-0 w-1/2 h-full overflow-hidden opacity-30">
-          <div className="w-full h-full bg-gradient-to-br from-pink-50 to-blue-50"></div>
-        </div>
-        {/* Right Background - Business People */}
-        <div className="absolute right-0 top-0 w-1/2 h-full overflow-hidden opacity-30">
-          <div className="w-full h-full bg-gradient-to-br from-blue-50 to-green-50"></div>
-        </div>
-      </div>
+    <div className="w-full relative overflow-hidden">
 
-      {/* Main Content Container */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        {/* Center Biggest Circle */}
-        <div className="relative mx-auto w-full max-w-[400px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[500px] aspect-square">
-          {/* Main White Circle */}
-          <div className="relative w-full h-full rounded-full bg-white shadow-2xl border-2 border-green-100">
-            {/* Subtle Background Pattern using Tailwind */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-50/50 to-transparent"></div>
-
-            {/* Content Container */}
-            <div className="relative w-full h-full flex flex-col items-center justify-center p-6 sm:p-8 md:p-12 lg:p-16">
-              {/* Top Curved Text Container */}
-              <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[60%] sm:w-[60%] md:w-[60%]">
-                {/* Curved Text using SVG Path */}
-                <svg
-                  viewBox="0 0 400 80"
-                  className="w-full h-20"
-                  preserveAspectRatio="xMidYMid meet"
+      {/* メインコンテンツエリア */}
+      <div className="relative w-full -mt-px" style={{ zIndex: 30 }}>
+        <div className="absolute inset-0 w-full h-full">
+          <div className="relative w-full h-full">
+            {/* 左側の背景画像 */}
+            <div className="absolute left-0 top-0 w-1/2 h-full">
+              <Image
+                src="/img/Hero5000_Bg_Left.png"
+                alt="Background Left"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+            {/* 右側の背景画像 */}
+            <div className="absolute right-0 top-0 w-1/2 h-full">
+              <Image
+                src="/img/Hero5000_Bg_Right.png"
+                alt="Background Right"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto">
+          {/* 白い円形のメインコンテンツエリア */}
+          <div className="relative mx-auto" style={{ width: 'min(100vw, 700px)', maxWidth: '700px' }}>
+            {/* 完全な円形の白いコンテナ */}
+            <div
+              className="relative bg-white shadow-2xl p-8 md:p-12 lg:p-16 w-full"
+              style={{
+                borderRadius: '50%',
+                aspectRatio: '1 / 1',
+                minHeight: '420px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              {/* 緑のテキスト - 円周の上部に沿って配置 */}
+              <svg
+                className="absolute top-0 left-0 w-full h-full pointer-events-none"
+                style={{ overflow: 'visible' }}
+                viewBox="0 0 100 100"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <defs>
+                  {/* 円周の上部に沿った円弧パス - 中心(50,50)、半径38で円の内側に配置、上向きの弧 */}
+                  <path
+                    id="circle-text-path"
+                    d="M 10 44 A 39 37 0 0 1 90 44"
+                    fill="none"
+                    stroke="none"
+                  />
+                </defs>
+                <text
+                  className="text-[#84c049] font-bold fill-current"
+                  style={{
+                    fontSize: '4.0px',
+                    letterSpacing: '1.2px',
+                  }}
                 >
-                  <defs>
-                    <path
-                      id="curve-path"
-                      d="M 70,100 Q 180,20 350,100"
-                      fill="none"
-                    />
-                  </defs>
-                  <text
-                    className="text-green-600 fill-green-600 font-semibold text-xl"
-                  >
-                    <textPath href="#curve-path" startOffset="5%">
-                      | 医療、介護者開発様必見! |
-                    </textPath>
-                  </text>
+                  <textPath href="#circle-text-path" startOffset="50%" textAnchor="middle" dominantBaseline="middle">
+                    | 医療、介護、その他法人事業者様必見! |
+                  </textPath>
+                </text>
+              </svg>
+
+              {/* 指差しアイコン - 円周の上部に配置 */}
+              <div
+                className="absolute"
+                style={{
+                  top: '12%',
+                  right: '28%',
+                }}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  className="text-[#84c049]"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M10 2 L10 12 M10 2 L6 6 M10 2 L14 6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10 12 L6 16 M10 12 L14 16" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
 
-              {/* Hand Cursor Icon - Positioned below curved text */}
-              <div className="absolute top-20 sm:top-24 md:top-28 lg:top-32 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <Hand className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-green-600 rotate-[-20deg]" />
-                </div>
-              </div>
-
-              {/* Main Value Proposition */}
-              <div className="items-center justify-center mt-8 sm:mt-10 md:mt-12 lg:mt-16">
-                {/* 最大 - Maximum */}
-                <div className='flex'>
-
-                  <span className="text-sm sm:text-base md:text-lg lg:text-xl text-green-600 font-semibold mb-1 sm:mb-2">
+              {/* メイン見出し - 「最大 1億円まで 調達可能!」 */}
+              <div className="flex flex-col items-center justify-center mb-6 md:mb-8">
+                <div className="flex items-baseline justify-center gap-1 md:gap-2 mb-2">
+                  <span
+                    className="text-[#84c049] text-lg md:text-xl lg:text-2xl font-bold"
+                    style={{
+                      writingMode: 'vertical-rl',
+                      textOrientation: 'upright'
+                    }}
+                  >
                     最大
                   </span>
-
-                  {/* 1億円まで - Up to 100 million yen */}
-                  <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-orange-500 mb-2 sm:mb-3 md:mb-4">
-                    1億円
+                  <span className="text-[#ff9f24] font-bold leading-none flex items-baseline">
+                    <span className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl">1</span>
+                    <span className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl">億円</span>
                   </span>
-
-                  <span className="text-sm sm:text-base md:text-lg lg:text-xl text-green-600 font-semibold mb-1 sm:mb-2">
-                    まで
-                  </span>
-
+                  <span className="text-[#84c049] text-3xl md:text-4xl lg:text-5xl font-bold">まで</span>
                 </div>
-                {/* 調達可能! - Procurement possible! */}
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-700">
+                <span className="text-gray-800 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                   調達可能!
-                </h1>
+                </span>
               </div>
 
-              {/* Smaller Orange Circles - Positioned around the main circle */}
-              {/* Top Left Badge */}
-              <div className="absolute top-8 sm:top-8 md:top-12 lg:top-12 left-0 sm:-left-8 md:-left-12 lg:-left-16 xl:-left-20">
-                <div className="w-20 h-20  bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  <div className="text-center px-2 sm:px-3">
-                    <p className="text-sm font-semibold leading-tight">
-                      初期<br />審査費用<br />0円
-                    </p>
-                  </div>
+              {/* 赤いハイライトボックスとサービス名 */}
+              <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8 mb-6 md:mb-8">
+                <div className="bg-[#c00c06] text-white px-5 py-3 md:px-6 md:py-3 rounded-md">
+                  <span className="text-base md:text-lg lg:text-xl font-bold whitespace-nowrap">
+                    翌営業日調達可能
+                  </span>
                 </div>
+                <span className="text-gray-800 text-base md:text-lg lg:text-xl font-semibold">
+                  再生支援ファクタリングサービス
+                </span>
               </div>
 
-              {/* Mid Left Badge */}
-              <div className="absolute top-2/5 -translate-y-1/2 left-0 sm:-left-8 md:-left-24 lg:-left-28 xl:-left-32">
-                <div className="w-20 h-20 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  <div className="text-center px-2 sm:px-3">
-                    <p className="text-sm font-semibold leading-tight">
-                      最短<br />翌営業日<br />調達可能
-                    </p>
-                  </div>
+              {/* スローガン */}
+              <div className="flex flex-col items-center justify-center mb-8 md:mb-10">
+                <span className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 flex items-baseline">
+                  <span className="text-[#ff9f24]">借りる</span>
+                  <span className="text-black text-base md:text-lg lg:text-xl">から</span>
+                  <span className="text-[#ff9f24]">ファクタリング</span>
+                  <span className="text-black text-base md:text-lg lg:text-xl">で</span>
+                </span>
+                <span className="text-[#ff9f24] text-2xl md:text-3xl lg:text-4xl font-bold">
+                  作る時代へ
+                </span>
+              </div>
+            </div>
+
+            {/* 4つのオレンジ円形バッジ - 白い形状の周りに配置 */}
+            {/* 左上のバッジ */}
+            <div
+              className="absolute bg-[#ff9f24] text-white font-bold tracking-widest flex items-center justify-center translate-x-[-1%] translate-y-[-10%] sm:translate-x-[-50%] sm:translate-y-[-10%] md:translate-x-[-90%] md:translate-y-[-10%]"
+              style={{
+                width: 'clamp(80px, 18vw, 140px)',
+                height: 'clamp(80px, 18vw, 140px)',
+                borderRadius: '50%',
+                top: '10%',
+                left: '1%',
+                fontSize: 'clamp(12px, 2vw, 20px)',
+                textAlign: 'center',
+                padding: '12px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.4)',
+                zIndex: 10,
+                lineHeight: '1.4',
+              }}
+            >
+              <span>初期<br />審査費用<br />0円</span>
+            </div>
+
+            {/* 左中のバッジ */}
+            <div
+              className="absolute bg-[#ff9f24] text-white font-bold tracking-widest flex items-center justify-center translate-x-[-1%] -translate-y-[50%] sm:translate-x-[-80%] sm:-translate-y-[50%]  md:translate-x-[-130%] md:-translate-y-[80%]"
+              style={{
+                width: 'clamp(80px, 18vw, 140px)',
+                height: 'clamp(80px, 18vw, 140px)',
+                borderRadius: '50%',
+                top: '50%',
+                left: '1%',
+                fontSize: 'clamp(12px, 2vw, 20px)',
+                textAlign: 'center',
+                padding: '12px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.4)',
+                zIndex: 10,
+                lineHeight: '1.4',
+              }}
+            >
+              <span>最短<br />翌営業日<br />調達可能</span>
+            </div>
+
+            {/* 右上のバッジ */}
+            <div
+              className="absolute bg-[#ff9f24] text-white font-bold tracking-widest flex items-center justify-center translate-x-[1%] translate-y-[-10%] sm:translate-x-[50%] sm:translate-y-[-10%] md:translate-x-[90%] md:translate-y-[-10%]"
+              style={{
+                width: 'clamp(80px, 18vw, 140px)',
+                height: 'clamp(80px, 18vw, 140px)',
+                borderRadius: '50%',
+                top: '10%',
+                right: '1%',
+                fontSize: 'clamp(12px, 2vw, 20px)',
+                textAlign: 'center',
+                padding: '12px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.4)',
+                zIndex: 10,
+                lineHeight: '1.4',
+              }}
+            >
+              <span>日本全国<br />対応</span>
+            </div>
+
+            {/* 右中のバッジ */}
+            <div
+              className="absolute bg-[#ff9f24] text-white font-bold tracking-widest flex items-center justify-center translate-x-[1%] -translate-y-[50%] sm:translate-x-[80%] sm:-translate-y-[50%]  md:translate-x-[130%] md:-translate-y-[80%]"
+              style={{
+                width: 'clamp(80px, 18vw, 140px)',
+                height: 'clamp(80px, 18vw, 140px)',
+                borderRadius: '50%',
+                top: '50%',
+                right: '1%',
+                fontSize: 'clamp(12px, 2vw, 20px)',
+                textAlign: 'center',
+                padding: '12px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.4)',
+                zIndex: 10,
+                lineHeight: '1.4',
+              }}
+            >
+              <span>新規<br />事業者も<br />OK</span>
+            </div>
+
+            {/* 3つのゴールドバッジ - 中央円の下部に配置 */}
+            {/* 左のバッジ */}
+            <div
+              className="absolute"
+              style={{
+                bottom: '-30px',
+                left: '20%',
+                transform: 'translateX(-50%)',
+                zIndex: 30,
+              }}
+            >
+              <div
+                className="relative flex flex-col items-center justify-center"
+                style={{
+                  width: 'clamp(100px, 18vw, 180px)',
+                  height: 'clamp(100px, 18vw, 180px)',
+                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
+                  borderRadius: '50%',
+                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
+                  border: '4px solid rgba(255, 255, 255, 0.4)',
+                }}
+              >
+                {/* リボン装飾 */}
+                <div
+                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+                  style={{
+                    width: 'clamp(80px, 12vw, 120px)',
+                    height: 'clamp(24px, 3vw, 36px)',
+                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
+                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
+                  }}
+                />
+                {/* テキスト */}
+                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                  {/* 上部テキスト - 黒色、最上部に配置 */}
+                  <span className="text-black font-bold absolute top-2 text-center" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>最大 <br />10億円まで</span>
+                  {/* メインテキスト - 赤色、約80%のサイズ */}
+                  <span className="text-[#c00c06] font-bold absolute top-10 text-center leading-tight" style={{ fontSize: 'clamp(14px, 2.8vw, 32px)', textShadow: '0 0 4px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7)' }}>
+                    買い取り<br />可能
+                  </span>
                 </div>
               </div>
+            </div>
 
-              {/* Top Right Badge */}
-              <div className="absolute top-7 sm:top-7 md:top-12 lg:top-12 right-0 sm:-right-8 md:-right-12 lg:-right-16 xl:-right-20">
-                <div className="w-20 h-20 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  <div className="text-center px-2 sm:px-3">
-                    <p className="text-sm font-semibold leading-tight">
-                      日本全国<br />対応
-                    </p>
-                  </div>
+            {/* 中央のバッジ */}
+            <div
+              className="absolute"
+              style={{
+                bottom: '-30px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                zIndex: 30,
+              }}
+            >
+              <div
+                className="relative flex flex-col items-center justify-center"
+                style={{
+                  width: 'clamp(100px, 18vw, 180px)',
+                  height: 'clamp(100px, 18vw, 180px)',
+                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
+                  borderRadius: '50%',
+                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
+                  border: '4px solid rgba(255, 255, 255, 0.4)',
+                }}
+              >
+                {/* リボン装飾 */}
+                <div
+                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+                  style={{
+                    width: 'clamp(80px, 12vw, 120px)',
+                    height: 'clamp(24px, 3vw, 36px)',
+                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
+                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
+                  }}
+                />
+                {/* テキスト */}
+                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                  {/* 上部テキスト - 黒色、最上部に配置 */}
+                  <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>新規ご契約率</span>
+                  {/* メインテキスト - 赤色、約80%のサイズ */}
+                  <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>80</span>
+                  {/* %超 - 小さな赤色、右下に配置 */}
+                  <span className="text-[#c00c06] font-bold absolute bottom-4 right-4" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
                 </div>
               </div>
+            </div>
 
-              {/* Mid Right Badge */}
-              <div className="absolute top-2/5 -translate-y-1/2 right-0 sm:-right-8 md:-right-24 lg:-right-28 xl:-right-32">
-                <div className="w-20 h-20 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  <div className="text-center px-2 sm:px-3">
-                    <p className="text-sm font-semibold leading-tight">
-                      新規<br />事業者も<br />OK
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" absolute flex -bottom-5 gap-3">
-                <div className=" top-12 sm:top-16 md:top-20 lg:top-24 left-0 sm:-left-8 md:-left-12 lg:-left-16 xl:-left-20">
-                  <div className="w-24 h-24  bg-yellow-300 text-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="text-center px-2 sm:px-3">
-                      <p className="text-sm font-semibold leading-tight">
-                        買いけり
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className=" top-12 sm:top-16 md:top-20 lg:top-24 left-0 sm:-left-8 md:-left-12 lg:-left-16 xl:-left-20">
-                  <div className="w-24 h-24  bg-yellow-300 text-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="text-center px-2 sm:px-3">
-                      <p className="text-3xl font-semibold leading-tight">
-                        80
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className=" top-12 sm:top-16 md:top-20 lg:top-24 left-0 sm:-left-8 md:-left-12 lg:-left-16 xl:-left-20">
-                  <div className="w-24 h-24  bg-yellow-300 text-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                    <div className="text-center px-2 sm:px-3">
-                      <p className="text-3xl font-semibold leading-tight">
-                        90
-                      </p>
-                    </div>
-                  </div>
+            {/* 右のバッジ */}
+            <div
+              className="absolute"
+              style={{
+                bottom: '-30px',
+                right: '20%',
+                transform: 'translateX(50%)',
+                zIndex: 30,
+              }}
+            >
+              <div
+                className="relative flex flex-col items-center justify-center"
+                style={{
+                  width: 'clamp(100px, 18vw, 180px)',
+                  height: 'clamp(100px, 18vw, 180px)',
+                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
+                  borderRadius: '50%',
+                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
+                  border: '4px solid rgba(255, 255, 255, 0.4)',
+                }}
+              >
+                {/* リボン装飾 */}
+                <div
+                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+                  style={{
+                    width: 'clamp(80px, 12vw, 120px)',
+                    height: 'clamp(24px, 3vw, 36px)',
+                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
+                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
+                  }}
+                />
+                {/* テキスト */}
+                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                  {/* 上部テキスト - 黒色、最上部に配置 */}
+                  <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>リピート率</span>
+                  {/* メインテキスト - 赤色、約80%のサイズ */}
+                  <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>90</span>
+                  {/* %超 - 小さな赤色、右下に配置 */}
+                  <span className="text-[#c00c06] font-bold absolute bottom-4 right-4" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* 緑のバンド */}
+      <div className="relative w-full bg-[#77be39] py-8 md:py-12 overflow-visible" style={{ marginTop: '-1px', zIndex: 0 }}>
+        {/* 女性の画像 - 中央円の右下、緑のエリア内に配置 */}
+
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 relative">
+          <div className="flex flex-col gap-6 md:gap-8">
+            {/* 上部セクション - 黄色いバナーと電話番号 */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 relative">
+              {/* 左側: 黄色いバナー（吹き出し風/矢印風） */}
+              <div className="relative flex-shrink-0">
+                <div
+                  className=" bg-[#ffff02] px-6 py-4 md:px-8 md:py-5 relative"
+                  style={{
+                    borderRadius: '8px 12px 12px 8px',
+                    clipPath: 'polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%)',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  <div className="flex flex-col">
+                    <span className=" text-[#189b5a] text-xs md:text-sm font-semibold leading-tight tracking-widest text-center">
+                      再生支援ファクタリングサービス
+                    </span>
+                    <span className="text-[#189b5a] text-base md:text-lg lg:text-xl font-bold leading-tight mt-1 tracking-widest text-center">
+                      お電話でのご相談はこちら
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 右側: 電話番号と受付時間 */}
+              <div className="flex flex-row items-center justify-center">
+                {/* 電話アイコン - 黄色いバナーに少し重なる */}
+                <Phone
+                  className="w-8 h-8 md:w-10 md:h-10 text-[#f7fd20]"
+                />
+                {/* 電話番号 */}
+
+                <div className="text-[#f7fd20] text-3xl md:text-4xl lg:text-5xl font-bold transition-colors md:ml-12"
+                >
+                  <p
+                    className='transition-colors scale-y-150 py-4'
+                    style={{
+                      textShadow: '2px 1px 2px rgba(0,0,0,0.3)',
+                    }}>
+                    03-5647-7360
+                  </p>
+                  {/* 受付時間 */}
+                  <div className="flex flex-col items-center md:items-start">
+                    <p className="text-white text-xs md:text-sm font-medium">
+                      受付時間 9:00~18:00(日曜日を除く)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 下部セクション - お問い合わせボタン */}
+            <div className="flex justify-center  ">
+              <div
+                className="relative px-12 py-4 md:px-16 md:py-5 rounded-[15px] font-bold text-white text-lg md:text-xl lg:text-2xl transition-all hover:scale-105"
+                style={{
+                  background: 'linear-gradient(135deg, #189b5a 0%, #2E8B57 100%)',
+                  boxShadow: '0 4px 15px rgba(255,255,255,0.6), inset 0 1px 0 rgba(255,255,255,0.4)',
+                  border: '2px solid rgba(255, 255, 255, 1)',
+
+                }}
+              >
+                <span className="flex items-center gap-2 tracking-widest">
+                  お問合わせはこちら
+                  {/* 再生アイコン（右向きの三角形） */}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+                    <circle cx="32" cy="32" r="28" fill="#FFFFFF" />
+                    <polygon points="26,20 26,44 46,32" fill="#189b5a" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-24 sm:bottom-24 md:bottom-0 lg:bottom-0 right-0 sm:right-5 md:right-10 lg:right-20 pointer-events-none" style={{ zIndex: 30 }}>
+        <div className="relative w-60 h-84 md:w-72 md:h-120 lg:w-120 lg:h-[700px]" style={{ minHeight: '500px' }}>
+          <Image
+            src="/img/Hero5000_Woman.png"
+            alt="Business Woman"
+            fill
+            className="object-contain object-bottom"
+            priority
+          />
+        </div>
+      </div>
     </div>
+
   );
 }
 
