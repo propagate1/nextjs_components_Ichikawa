@@ -1,11 +1,12 @@
 'use client';
-import React from 'react';
 import Image from 'next/image';
 import { Phone } from 'lucide-react';
 
 export default function Hero5000() {
   return (
     <div className="w-full relative overflow-hidden">
+      {/* 背景画像 - 左と右を組み合わせ、ぼかし効果 */}
+
 
       {/* メインコンテンツエリア */}
       <div className="relative w-full -mt-px" style={{ zIndex: 30 }}>
@@ -241,132 +242,104 @@ export default function Hero5000() {
                 zIndex: 30,
               }}
             >
-              <div
-                className="relative flex flex-col items-center justify-center"
+
+              <div className="relative flex flex-col items-center justify-center"
                 style={{
-                  width: 'clamp(100px, 18vw, 180px)',
+                  width: 'clamp(140px, 24vw, 250px)',
                   height: 'clamp(100px, 18vw, 180px)',
-                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
-                  borderRadius: '50%',
-                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
-                  border: '4px solid rgba(255, 255, 255, 0.4)',
-                }}
-              >
-                {/* リボン装飾 */}
-                <div
-                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-                  style={{
-                    width: 'clamp(80px, 12vw, 120px)',
-                    height: 'clamp(24px, 3vw, 36px)',
-                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
-                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
-                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
-                  }}
+                }}>
+                <Image
+                  src="/img/Hero5000_Badge.png"
+                  alt="Background Left"
+                  fill
+                  className=" object-contain object-center"
+                  priority
                 />
-                {/* テキスト */}
-                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
-                  {/* 上部テキスト - 黒色、最上部に配置 */}
-                  <span className="text-black font-bold absolute top-2 text-center" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>最大 <br />10億円まで</span>
-                  {/* メインテキスト - 赤色、約80%のサイズ */}
-                  <span className="text-[#c00c06] font-bold absolute top-10 text-center leading-tight" style={{ fontSize: 'clamp(14px, 2.8vw, 32px)', textShadow: '0 0 4px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7)' }}>
-                    買い取り<br />可能
-                  </span>
-                </div>
+
+              {/* テキスト */}
+              <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                {/* 上部テキスト - 黒色、最上部に配置 */}
+                <span className="text-black font-bold absolute top-2 text-center" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>最大 <br />10億円まで</span>
+                {/* メインテキスト - 赤色、約80%のサイズ */}
+                <span className="text-[#c00c06] font-bold absolute top-10 sm:top-10 md:top-12 lg:top-14 text-center leading-tight" style={{ fontSize: 'clamp(14px, 2.8vw, 32px)', textShadow: '0 0 4px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7)' }}>
+                  買い取り<br />可能
+                </span>
               </div>
             </div>
+          </div>
 
-            {/* 中央のバッジ */}
+          {/* 中央のバッジ */}
+          <div
+            className="absolute"
+            style={{
+              bottom: '-30px',
+              left: '50%',
+              transform: 'translateX(-50%)',
+              zIndex: 30,
+            }}
+          >
             <div
-              className="absolute"
               style={{
-                bottom: '-30px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                zIndex: 30,
-              }}
-            >
-              <div
-                className="relative flex flex-col items-center justify-center"
-                style={{
-                  width: 'clamp(100px, 18vw, 180px)',
+                  width: 'clamp(140px, 24vw, 250px)',
                   height: 'clamp(100px, 18vw, 180px)',
-                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
-                  borderRadius: '50%',
-                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
-                  border: '4px solid rgba(255, 255, 255, 0.4)',
-                }}
-              >
-                {/* リボン装飾 */}
-                <div
-                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-                  style={{
-                    width: 'clamp(80px, 12vw, 120px)',
-                    height: 'clamp(24px, 3vw, 36px)',
-                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
-                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
-                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
-                  }}
+                }}>
+                <Image
+                  src="/img/Hero5000_Badge.png"
+                  alt="Background Left"
+                  fill
+                  className=" object-contain object-center"
+                  priority
                 />
-                {/* テキスト */}
-                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
-                  {/* 上部テキスト - 黒色、最上部に配置 */}
-                  <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>新規ご契約率</span>
-                  {/* メインテキスト - 赤色、約80%のサイズ */}
-                  <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>80</span>
-                  {/* %超 - 小さな赤色、右下に配置 */}
-                  <span className="text-[#c00c06] font-bold absolute bottom-4 right-4" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
-                </div>
+              {/* テキスト */}
+              <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                {/* 上部テキスト - 黒色、最上部に配置 */}
+                <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>新規ご契約率</span>
+                {/* メインテキスト - 赤色、約80%のサイズ */}
+                <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>80</span>
+                {/* %超 - 小さな赤色、右下に配置 */}
+                <span className="text-[#c00c06] font-bold absolute bottom-2 sm:bottom-3 lg:bottom-4 right-8" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
               </div>
             </div>
+          </div>
 
-            {/* 右のバッジ */}
+          {/* 右のバッジ */}
+          <div
+            className="absolute"
+            style={{
+              bottom: '-30px',
+              right: '20%',
+              transform: 'translateX(50%)',
+              zIndex: 30,
+            }}
+          >
             <div
-              className="absolute"
               style={{
-                bottom: '-30px',
-                right: '20%',
-                transform: 'translateX(50%)',
-                zIndex: 30,
-              }}
-            >
-              <div
-                className="relative flex flex-col items-center justify-center"
-                style={{
-                  width: 'clamp(100px, 18vw, 180px)',
+                  width: 'clamp(140px, 24vw, 250px)',
                   height: 'clamp(100px, 18vw, 180px)',
-                  backgroundImage: 'radial-gradient(circle at center, rgba(255, 215, 0, 0.95) 0%, rgba(255, 179, 71, 0.95) 100%)',
-                  borderRadius: '50%',
-                  boxShadow: '0 6px 25px rgba(0,0,0,0.4), inset 0 3px 15px rgba(255,255,255,0.4)',
-                  border: '4px solid rgba(255, 255, 255, 0.4)',
-                }}
-              >
-                {/* リボン装飾 */}
-                <div
-                  className="absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-                  style={{
-                    width: 'clamp(80px, 12vw, 120px)',
-                    height: 'clamp(24px, 3vw, 36px)',
-                    background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
-                    clipPath: 'polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%)',
-                    boxShadow: '0 3px 10px rgba(0,0,0,0.4)',
-                  }}
+                }}>
+                <Image
+                  src="/img/Hero5000_Badge.png"
+                  alt="Background Left"
+                  fill
+                  className=" object-contain object-center"
+                  priority
                 />
-                {/* テキスト */}
-                <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
-                  {/* 上部テキスト - 黒色、最上部に配置 */}
-                  <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>リピート率</span>
-                  {/* メインテキスト - 赤色、約80%のサイズ */}
-                  <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>90</span>
-                  {/* %超 - 小さな赤色、右下に配置 */}
-                  <span className="text-[#c00c06] font-bold absolute bottom-4 right-4" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
-                </div>
+              {/* テキスト */}
+              <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4" style={{ paddingTop: '8%', paddingBottom: '8%' }}>
+                {/* 上部テキスト - 黒色、最上部に配置 */}
+                <span className="text-black font-bold absolute top-2" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>リピート率</span>
+                {/* メインテキスト - 赤色、約80%のサイズ */}
+                <span className="text-[#c00c06] font-bold" style={{ fontSize: 'clamp(56px, 5.6vw, 84px)', textShadow: '0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7)' }}>90</span>
+                {/* %超 - 小さな赤色、右下に配置 */}
+                <span className="text-[#c00c06] font-bold absolute bottom-2 sm:bottom-3 lg:bottom-4 right-8" style={{ fontSize: 'clamp(20px, 1.6vw, 20px)', textShadow: '0 0 3px rgba(255, 255, 255, 0.9), 0 0 6px rgba(255, 255, 255, 0.7)' }}>%超</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      {/* 緑のバンド */}
+      {/* 緑のバンド */ }
       <div className="relative w-full bg-[#77be39] py-8 md:py-12 overflow-visible" style={{ marginTop: '-1px', zIndex: 0 }}>
         {/* 女性の画像 - 中央円の右下、緑のエリア内に配置 */}
 
@@ -458,7 +431,7 @@ export default function Hero5000() {
           />
         </div>
       </div>
-    </div>
+    </div >
 
   );
 }

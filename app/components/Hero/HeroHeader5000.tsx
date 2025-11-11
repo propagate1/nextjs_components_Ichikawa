@@ -1,12 +1,12 @@
 'use client';
-import React from 'react';
 import Image from 'next/image';
 import { Phone } from 'lucide-react';
+
 
 export default function HeroHeader5000() {
   return (
     <header className="relative z-10 w-full bg-white/95 backdrop-blur-sm">
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 pt-4 sm:pt-5 md:pt-6 pb-0">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6">
         <div className="max-w-7xl mx-auto">
           {/* Desktop Layout */}
           <div className="hidden md:flex items-center justify-between">
@@ -42,8 +42,8 @@ export default function HeroHeader5000() {
                 href="tel:03-5647-7360"
                 className="flex items-center gap-2 lg:gap-3 group"
               >
-                <Phone className="w-5 h-5 lg:w-6 lg:h-6 text-[#f0a030] flex-shrink-0 scale-y-170" />
-                <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#f0a030] group-hover:text-orange-600 transition-colors scale-y-170">
+                <Phone className="w-5 h-5 lg:w-6 lg:h-6 text-orange-400 flex-shrink-0 scale-y-170" />
+                <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-400 group-hover:text-orange-600 transition-colors scale-y-170">
                   03-5647-7360
                 </span>
               </a>
@@ -96,8 +96,8 @@ export default function HeroHeader5000() {
                 href="tel:03-5647-7360"
                 className="flex items-center gap-3 m-auto"
               >
-                <Phone className="w-5 h-5 text-[#f0a030] flex-shrink-0 scale-y-150" />
-                <span className=" text-2xl font-bold text-[#f0a030] group-hover:text-orange-600 transition-colors scale-y-150">
+                <Phone className="w-5 h-5 text-orange-400 flex-shrink-0 scale-y-150" />
+                <span className=" text-2xl font-bold text-orange-400 group-hover:text-orange-600 transition-colors scale-y-150">
                   03-5647-7360
                 </span>
               </a>
