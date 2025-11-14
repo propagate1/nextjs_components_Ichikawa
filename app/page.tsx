@@ -1,9 +1,9 @@
-import Service5000 from './components/Service/Service5000';
+import Price5000 from './components/Price/Price5000';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Service5000/>
+      <Price5000/>
     </div>
   );
 }
