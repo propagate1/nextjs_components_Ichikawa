@@ -1,11 +1,9 @@
-import HeroHeader5000 from './components/Header/Header5000';
-import Hero5000 from './components/Hero/Hero5000';
+import Hero5003 from './components/Hero/Hero5003';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <HeroHeader5000 />
-      <Hero5000 />
+      <Hero5003/>
     </div>
   );
 }
