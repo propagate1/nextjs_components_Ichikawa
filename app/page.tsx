@@ -1,9 +1,10 @@
-import Voice5000 from './components/Voice/Voice5000';
+import Hero5001 from './components/Hero/Hero5001';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Voice5000/> 
+      
+      <Hero5001/>
     </div>
   );
 }
