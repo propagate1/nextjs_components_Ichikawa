@@ -20,7 +20,7 @@ export default function Challenges5000() {
             <div className="relative w-full max-w-3xl mx-0">
               <div className="text-center m-auto bg-gray-200 w-full sm:w-[60%] rounded-3xl">
 
-                {/* Bulleted List Content */}
+                {/* Bulleted List Content */} 
                 <div className="flex items-center justify-center p-4">
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
