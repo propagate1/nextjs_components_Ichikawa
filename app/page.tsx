@@ -1,5 +1,4 @@
-import Header5005 from './components/Header/Header5005';
-import Hero5005 from './components/Hero/Hero5005';
+import Company5000 from './components/Company/Company5000';
 
 export default function Home() {
   return (
