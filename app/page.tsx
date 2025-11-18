@@ -1,11 +1,9 @@
-import HeroHeader5000 from './components/Header/Header5000';
-import Hero5000 from './components/Hero/Hero5000';
+import Company5000 from './components/Company/Company5000';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <HeroHeader5000 />
-      <Hero5000 />
+      <Company5000/>
     </div>
   );
 }
