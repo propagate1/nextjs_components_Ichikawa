@@ -57,14 +57,14 @@ export default function Message5000() {
               {/* Vertical Text - Name, Title, Affiliation */}
               <div className="flex flex-row gap-1 md:gap-4 items-start relative m-auto">
                 {/* Name */}
-                <div className="writing-vertical">
+                <div className="[writing-mode:vertical-rl]  [text-orientation:upright]">
                   <p className="text-sm md:text-2xl lg:text-3xl font-bold text-amber-950 tracking-[4px]">
                     小林泰男 名誉教授
                   </p>
                 </div>
 
                 {/* Affiliation */}
-                <div className="writing-vertical">
+                <div className="[writing-mode:vertical-rl]  [text-orientation:upright]">
                   <p className="text-xs md:text-sm lg:text-base text-amber-950 tracking-[4px]">
                     北海道大学 動物機能栄養学研究室
                   </p>
@@ -78,7 +78,7 @@ export default function Message5000() {
               {/* Large Quotation Marks - positioned to the right of vertical text */}
               <div>
                 <span className="text-5xl md:text-8xl lg:text-9xl text-gray-300 font-serif leading-none opacity-50">
-                ``
+                  ``
                 </span>
               </div>
               <p className=" px-0 md:px-[12px] text-[12px] md:text-base lg:text-lg lg:font-bold text-amber-950 leading-[24px] md:leading-[32px]">
