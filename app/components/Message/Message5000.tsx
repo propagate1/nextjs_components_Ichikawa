@@ -73,7 +73,7 @@ export default function Message5000() {
             </div>
 
             {/* Recommendation Text */}
-            <div className=" flex flex-col">
+            <div className=" flex flex-col p-4">
 
               {/* Large Quotation Marks - positioned to the right of vertical text */}
               <div>
