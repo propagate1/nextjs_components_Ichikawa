@@ -11,7 +11,7 @@ export default function Hero5003() {
           src="/img/Hero5003_Bg_1.png"
           alt="Background"
           fill
-          className="object-contain opacity-30"
+          className="object-cover opacity-30"
           priority
         />
       </div>
