@@ -1,9 +1,9 @@
-import Product5001 from './components/Products/Product5001';
+import Message5000 from './components/Message/Message5000';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Product5001/>
+      <Message5000/>
     </div>
   );
 }
