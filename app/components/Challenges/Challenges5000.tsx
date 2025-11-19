@@ -21,7 +21,7 @@ export default function Challenges5000() {
               <div className="text-center m-auto bg-gray-200 w-full sm:w-[60%] rounded-3xl">
 
                 {/* Bulleted List Content */}
-                <div className="flex items-center justify-center p-4">
+                <div className="flex items-center justify-center p-4 text-left">
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <span className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -101,8 +101,8 @@ export default function Challenges5000() {
                   className="object-contain"
                   priority
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 pt-2">
-                  <p className="text-xs md:text-sm font-semibold text-black text-center leading-tight">
+                <div className="absolute -top-2 inset-0 flex items-center justify-center px-4 pt-2">
+                  <p className="text-md md:text-lg font-semibold text-black text-center ">
                     人が増えて<span className=" text-blue-500">同僚の</span><br /><span className=" text-blue-500">ことがわかりにくい</span>
                   </p>
                 </div>
@@ -119,8 +119,8 @@ export default function Challenges5000() {
                   className="object-contain"
                   priority
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4">
-                  <p className="text-xs md:text-sm font-semibold text-black text-center leading-tight">
+                <div className="absolute -top-12 inset-0 flex items-center justify-center px-4">
+                  <p className="text-md md:text-lg font-semibold text-black text-center ">
                     <span className=" text-blue-500">情報・<br />ノウハウの共有が</span><br />うまくいかない
                   </p>
                 </div>
@@ -137,8 +137,8 @@ export default function Challenges5000() {
                   className="object-contain"
                   priority
                 />
-                <div className="absolute -top- inset-0 flex items-center justify-center px-4 pt-2">
-                  <p className="text-xs md:text-sm font-semibold text-black text-center leading-tight">
+                <div className="absolute -top-4 inset-0 flex items-center justify-center px-4 pt-2">
+                  <p className="text-md md:text-lg font-semibold text-black text-center ">
                     <span className=" text-blue-500">社員の活躍</span><br />が見えづらい
                   </p>
                 </div>
@@ -156,7 +156,7 @@ export default function Challenges5000() {
                   priority
                 />
                 <div className="absolute inset-0 flex items-center justify-center px-4 pt-2">
-                  <p className="text-xs md:text-sm font-semibold text-black text-center leading-tight">
+                  <p className="text-md md:text-lg font-semibold text-black text-center">
                     リモートワークで<br /><span className=" text-blue-500">ちょっとした雑談</span><br />が生まれにくい
                   </p>
                 </div>
@@ -164,8 +164,8 @@ export default function Challenges5000() {
             </div>
 
             {/* Bottom Right Bubble - below the woman */}
-            <div className="absolute bottom-28 right-[5%] w-48 md:w-56 lg:w-64">
-              <div className="relative w-full h-32 md:h-40">
+            <div className="absolute bottom-20 right-[5%] w-48 md:w-56 lg:w-64">
+              <div className="relative w-full h-32 md:h-48">
                 <Image
                   src="/img/Challenges5000_Icon_5.png"
                   alt="Thought bubble 5"
@@ -173,8 +173,8 @@ export default function Challenges5000() {
                   className="object-contain"
                   priority
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 pt-2">
-                  <p className="text-xs md:text-sm font-semibold text-black text-center leading-tight">
+                <div className="absolute -top-6 inset-0 flex items-center justify-center px-4 pt-2">
+                  <p className="text-md md:text-lg font-semibold text-black text-center">
                     <span className=" text-blue-500">会社のバリューや<br />行動指針がなかなか</span><br />浸透しない
                   </p>
                 </div>
