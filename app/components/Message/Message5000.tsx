@@ -11,7 +11,7 @@ export default function Message5000() {
   };
 
   return (
-    <div className="m-12 rounded-4xl bg-[#fcf8f4] py-12 md:py-16 lg:py-20">
+    <div className=" m-0 lg:m-12 rounded-4xl bg-[#fcf8f4] py-12 md:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16">
