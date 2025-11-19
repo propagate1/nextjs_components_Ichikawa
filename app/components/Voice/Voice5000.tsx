@@ -32,199 +32,400 @@ export default function Voice5000() {
         </div>
 
         {/* Five Testimonial Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-0 mb-12 md:mb-16">
-          {/* Testimonial 1 - Blue Speech Bubble */}
-          <div className="flex flex-col items-center relative z-10">
-            {/* Default Text - above the speech bubble */}
-            <div className="mb-2" style={{ marginTop: '0px' }}>
-              <p className="text-xs md:text-sm font-bold text-black text-center">
-                \洗濯機も保管OK!/
-              </p>
-            </div>
-            {/* Speech Bubble - positioned above, different height */}
-            <div className="relative mb-6" style={{ width: '200px', height: '180px', marginRight: '-30px' }}>
-              <Image
-                src="/img/Voice5000_Badge_1.png"
-                alt="Speech bubble 1"
-                fill
-                className="object-contain"
-                priority
-              />
-              {/* Text Content */}
-              <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
-                <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
-                  洗濯機やベッドまで預かってくれた!
+        <div className="space-y-8 md:space-y-0 mb-12 md:mb-16">
+          {/* Mobile Layout: Vertical list with alternating left/right */}
+          <div className="lg:hidden space-y-8">
+            {/* Testimonial 1 - Blue Speech Bubble - Left side on mobile */}
+            <div className="flex items-start gap-4 relative">
+              {/* Speech Bubble - Left */}
+              <div className="flex-shrink-0 relative w-40 h-40">
+                <Image
+                  src="/img/Voice5000_Badge_1.png"
+                  alt="Speech bubble 1"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-2" style={{ top: '20%', bottom: '15%', left: '5%', right: '5%' }}>
+                  <p className="text-[12px] text-white mb-0.5 text-center leading-tight">
+                    洗濯機やベッドまで預かってくれた!
+                  </p>
+                  <p className="text-[8px] text-white/80 text-center leading-tight">
+                    江東区 / 50代女性
+                  </p>
+                </div>
+              </div>
+              {/* Annotation Text */}
+              <div className="flex-1 pt-2">
+                <p className="text-xs font-bold text-black mb-2">
+                  \洗濯機も保管OK!/
                 </p>
-                <p className="text-[9px] md:text-[10px] text-white/80 text-center leading-tight">
-                  江東区 / 50代女性
-                </p>
+                {/* Character - Right */}
+                <div className="relative w-24 h-32 ml-auto">
+                  <Image
+                    src="/img/Voice5000_Person_1.png"
+                    alt="Customer testimonial 1"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               </div>
             </div>
-            {/* Character */}
-            <div className="relative w-32 h-40 md:w-40 md:h-48">
-              <Image
-                src="/img/Voice5000_Person_1.png"
-                alt="Customer testimonial 1"
-                fill
-                className="object-contain"
-                priority
-              />
+
+            {/* Testimonial 2 - Pink Speech Bubble - Right side on mobile */}
+            <div className="flex items-start gap-4 relative flex-row-reverse">
+              {/* Speech Bubble - Right */}
+              <div className="flex-shrink-0 relative  w-40 h-40">
+                <Image
+                  src="/img/Voice5000_Badge_2.png"
+                  alt="Speech bubble 2"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-2" style={{ top: '20%', bottom: '15%', left: '5%', right: '5%' }}>
+                  <p className="text-[12px] text-white mb-0.5 text-center leading-tight">
+                    田舎のホテルまで時間指定で届いた!
+                  </p>
+                  <p className="text-[8px] text-white/80 text-center leading-tight">
+                    埼玉県 / 40代女性
+                  </p>
+                </div>
+              </div>
+              {/* Annotation Text */}
+              <div className="flex-1 pt-2">
+                <p className="text-xs font-bold text-black mb-2 text-right">
+                  \ヤマトで全国対応!/
+                </p>
+                {/* Character - Left */}
+                <div className="relative w-24 h-32 mr-auto">
+                  <Image
+                    src="/img/Voice5000_Person_2.png"
+                    alt="Customer testimonial 2"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 - Yellow Speech Bubble - Left side on mobile */}
+            <div className="flex items-start gap-4 relative">
+              {/* Speech Bubble - Left */}
+              <div className="flex-shrink-0 relative  w-40 h-40">
+                <Image
+                  src="/img/Voice5000_Badge_3.png"
+                  alt="Speech bubble 3"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-2" style={{ top: '20%', bottom: '15%', left: '5%', right: '5%' }}>
+                  <p className="text-[12px] text-gray-900 mb-0.5 text-center leading-tight">
+                    引取当日は自分は何もしないで済みました。
+                  </p>
+                  <p className="text-[8px] text-gray-700 text-center leading-tight">
+                    港区 / 30代男性
+                  </p>
+                </div>
+              </div>
+              {/* Annotation Text */}
+              <div className="flex-1 pt-2">
+                <p className="text-xs font-bold text-black mb-2">
+                  \梱包までしてくれる!/
+                </p>
+                {/* Character - Right */}
+                <div className="relative w-24 h-32 ml-auto">
+                  <Image
+                    src="/img/Voice5000_Person_3.png"
+                    alt="Customer testimonial 3"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 4 - Green Speech Bubble - Right side on mobile */}
+            <div className="flex items-start gap-4 relative flex-row-reverse">
+              {/* Speech Bubble - Right */}
+              <div className="flex-shrink-0 relative  w-40 h-40">
+                <Image
+                  src="/img/Voice5000_Badge_4.png"
+                  alt="Speech bubble 4"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-2" style={{ top: '20%', bottom: '15%', left: '5%', right: '5%' }}>
+                  <p className="text-[12px] text-white mb-0.5 text-center leading-tight">
+                    急遽必要になった服もすぐに届けてくれた!
+                  </p>
+                  <p className="text-[8px] text-white/80 text-center leading-tight">
+                    横浜市 / 40代男性
+                  </p>
+                </div>
+              </div>
+              {/* Annotation Text */}
+              <div className="flex-1 pt-2">
+                <p className="text-xs font-bold text-black mb-2 text-right">
+                  \ほしい時に届く!/
+                </p>
+                {/* Character - Left */}
+                <div className="relative w-24 h-32 mr-auto">
+                  <Image
+                    src="/img/Voice5000_Person_4.png"
+                    alt="Customer testimonial 4"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 5 - Magenta Speech Bubble - Left side on mobile */}
+            <div className="flex items-start gap-4 relative">
+              {/* Speech Bubble - Left */}
+              <div className="flex-shrink-0 relative  w-40 h-40">
+                <Image
+                  src="/img/Voice5000_Badge_5.png"
+                  alt="Speech bubble 5"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-2" style={{ top: '20%', bottom: '15%', left: '5%', right: '5%' }}>
+                  <p className="text-[12px] text-white mb-0.5 text-center leading-tight">
+                    他社から宅トラに切替えたら今までの半額になった!
+                  </p>
+                  <p className="text-[8px] text-white/80 text-center leading-tight">
+                    新宿区 / 30代男性
+                  </p>
+                </div>
+              </div>
+              {/* Annotation Text */}
+              <div className="flex-1 pt-2">
+                <p className="text-xs font-bold text-black mb-2">
+                  \保管料が安い!/
+                </p>
+                {/* Character - Right */}
+                <div className="relative w-24 h-32 ml-auto">
+                  <Image
+                    src="/img/Voice5000_Person_5.png"
+                    alt="Customer testimonial 5"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Testimonial 2 - Pink Speech Bubble */}
-          <div className="flex flex-col items-center relative z-20">
-            {/* Default Text - above the speech bubble */}
-            <div className="mb-2" style={{ marginTop: '20px' }}>
-              <p className="text-xs md:text-sm font-bold text-black text-center">
-                \ヤマトで全国対応!/
-              </p>
-            </div>
-            {/* Speech Bubble - positioned above, different height */}
-            <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
-              <Image
-                src="/img/Voice5000_Badge_2.png"
-                alt="Speech bubble 2"
-                fill
-                className="object-contain"
-                priority
-              />
-              {/* Text Content */}
-              <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
-                <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
-                  田舎のホテルまで時間指定で届いた!
-                </p>
-                <p className="text-[9px] md:text-[10px] text-white/80 text-center leading-tight">
-                  名古屋市 / 40代女性
+          {/* Desktop Layout: Grid with 5 columns */}
+          <div className="hidden lg:grid lg:grid-cols-5 gap-0">
+            {/* Testimonial 1 - Blue Speech Bubble */}
+            <div className="flex flex-col items-center relative z-10">
+              {/* Default Text - above the speech bubble */}
+              <div className="mb-2" style={{ marginTop: '0px' }}>
+                <p className="text-xs md:text-sm font-bold text-black text-center">
+                  \洗濯機も保管OK!/
                 </p>
               </div>
+              {/* Speech Bubble - positioned above, different height */}
+              <div className="relative mb-6" style={{ width: '200px', height: '180px', marginRight: '-30px' }}>
+                <Image
+                  src="/img/Voice5000_Badge_1.png"
+                  alt="Speech bubble 1"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
+                  <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
+                    洗濯機やベッドまで預かってくれた!
+                  </p>
+                  <p className="text-[12px] md:text-[10px] text-white/80 text-center leading-tight">
+                    江東区 / 50代女性
+                  </p>
+                </div>
+              </div>
+              {/* Character */}
+              <div className="relative w-32 h-40 md:w-40 md:h-48">
+                <Image
+                  src="/img/Voice5000_Person_1.png"
+                  alt="Customer testimonial 1"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
-            {/* Character */}
-            <div className="relative w-32 h-40 md:w-40 md:h-48">
-              <Image
-                src="/img/Voice5000_Person_2.png"
-                alt="Customer testimonial 2"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
 
-          {/* Testimonial 3 - Yellow Speech Bubble */}
-          <div className="flex flex-col items-center relative z-30">
-            {/* Default Text - above the speech bubble */}
-            <div className="mb-2" style={{ marginTop: '-10px' }}>
-              <p className="text-xs md:text-sm font-bold text-black text-center">
-                \梱包までしてくれる!/
-              </p>
-            </div>
-            {/* Speech Bubble - positioned above, different height */}
-            <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
-              <Image
-                src="/img/Voice5000_Badge_3.png"
-                alt="Speech bubble 3"
-                fill
-                className="object-contain"
-                priority
-              />
-              {/* Text Content */}
-              <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
-                <p className="text-[10px] md:text-xs text-gray-900 mb-1 text-center leading-tight">
-                  引取当日は自分は何もせずに済みました。
-                </p>
-                <p className="text-[9px] md:text-[10px] text-gray-700 text-center leading-tight">
-                  港区 / 30代女性
+            {/* Testimonial 2 - Pink Speech Bubble */}
+            <div className="flex flex-col items-center relative z-20">
+              {/* Default Text - above the speech bubble */}
+              <div className="mb-2" style={{ marginTop: '20px' }}>
+                <p className="text-xs md:text-sm font-bold text-black text-center">
+                  \ヤマトで全国対応!/
                 </p>
               </div>
+              {/* Speech Bubble - positioned above, different height */}
+              <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
+                <Image
+                  src="/img/Voice5000_Badge_2.png"
+                  alt="Speech bubble 2"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
+                  <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
+                    田舎のホテルまで時間指定で届いた!
+                  </p>
+                  <p className="text-[12px] md:text-[10px] text-white/80 text-center leading-tight">
+                    埼玉県 / 40代女性
+                  </p>
+                </div>
+              </div>
+              {/* Character */}
+              <div className="relative w-32 h-40 md:w-40 md:h-48">
+                <Image
+                  src="/img/Voice5000_Person_2.png"
+                  alt="Customer testimonial 2"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
-            {/* Character */}
-            <div className="relative w-32 h-40 md:w-40 md:h-48">
-              <Image
-                src="/img/Voice5000_Person_3.png"
-                alt="Customer testimonial 3"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
 
-          {/* Testimonial 4 - Green Speech Bubble */}
-          <div className="flex flex-col items-center relative z-40">
-            {/* Default Text - above the speech bubble */}
-            <div className="mb-2" style={{ marginTop: '30px' }}>
-              <p className="text-xs md:text-sm font-bold text-black text-center">
-                \ほしい時に届く!/
-              </p>
-            </div>
-            {/* Speech Bubble - positioned above, different height */}
-            <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
-              <Image
-                src="/img/Voice5000_Badge_4.png"
-                alt="Speech bubble 4"
-                fill
-                className="object-contain"
-                priority
-              />
-              {/* Text Content */}
-              <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
-                <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
-                  急遽必要になった服もすぐに届けてくれた!
-                </p>
-                <p className="text-[9px] md:text-[10px] text-white/80 text-center leading-tight">
-                  横浜市 / 40代男性
+            {/* Testimonial 3 - Yellow Speech Bubble */}
+            <div className="flex flex-col items-center relative z-30">
+              {/* Default Text - above the speech bubble */}
+              <div className="mb-2" style={{ marginTop: '-10px' }}>
+                <p className="text-xs md:text-sm font-bold text-black text-center">
+                  \梱包までしてくれる!/
                 </p>
               </div>
+              {/* Speech Bubble - positioned above, different height */}
+              <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
+                <Image
+                  src="/img/Voice5000_Badge_3.png"
+                  alt="Speech bubble 3"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
+                  <p className="text-[10px] md:text-xs text-gray-900 mb-1 text-center leading-tight">
+                    引取当日は自分は何もせずに済みました。
+                  </p>
+                  <p className="text-[12px] md:text-[10px] text-gray-700 text-center leading-tight">
+                    港区 / 30代女性
+                  </p>
+                </div>
+              </div>
+              {/* Character */}
+              <div className="relative w-32 h-40 md:w-40 md:h-48">
+                <Image
+                  src="/img/Voice5000_Person_3.png"
+                  alt="Customer testimonial 3"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
-            {/* Character */}
-            <div className="relative w-32 h-40 md:w-40 md:h-48">
-              <Image
-                src="/img/Voice5000_Person_4.png"
-                alt="Customer testimonial 4"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
 
-          {/* Testimonial 5 - Magenta Speech Bubble */}
-          <div className="flex flex-col items-center relative z-50">
-            {/* Default Text - above the speech bubble */}
-            <div className="mb-2" style={{ marginTop: '10px' }}>
-              <p className="text-xs md:text-sm font-bold text-black text-center">
-                \保管料が安い!/
-              </p>
-            </div>
-            {/* Speech Bubble - positioned above, different height */}
-            <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px' }}>
-              <Image
-                src="/img/Voice5000_Badge_5.png"
-                alt="Speech bubble 5"
-                fill
-                className="object-contain"
-                priority
-              />
-              {/* Text Content */}
-              <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
-                <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
-                  他社から宅トラに切替えたら今までの半額になった!
-                </p>
-                <p className="text-[9px] md:text-[10px] text-white/80 text-center leading-tight">
-                  新宿区 / 30代男性
+            {/* Testimonial 4 - Green Speech Bubble */}
+            <div className="flex flex-col items-center relative z-40">
+              {/* Default Text - above the speech bubble */}
+              <div className="mb-2" style={{ marginTop: '30px' }}>
+                <p className="text-xs md:text-sm font-bold text-black text-center">
+                  \ほしい時に届く!/
                 </p>
               </div>
+              {/* Speech Bubble - positioned above, different height */}
+              <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px', marginRight: '-30px' }}>
+                <Image
+                  src="/img/Voice5000_Badge_4.png"
+                  alt="Speech bubble 4"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
+                  <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
+                    急遽必要になった服もすぐに届けてくれた!
+                  </p>
+                  <p className="text-[12px] md:text-[10px] text-white/80 text-center leading-tight">
+                    横浜市 / 40代男性
+                  </p>
+                </div>
+              </div>
+              {/* Character */}
+              <div className="relative w-32 h-40 md:w-40 md:h-48">
+                <Image
+                  src="/img/Voice5000_Person_4.png"
+                  alt="Customer testimonial 4"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
-            {/* Character */}
-            <div className="relative w-32 h-40 md:w-40 md:h-48">
-              <Image
-                src="/img/Voice5000_Person_5.png"
-                alt="Customer testimonial 5"
-                fill
-                className="object-contain"
-                priority
-              />
+
+            {/* Testimonial 5 - Magenta Speech Bubble */}
+            <div className="flex flex-col items-center relative z-50">
+              {/* Default Text - above the speech bubble */}
+              <div className="mb-2" style={{ marginTop: '10px' }}>
+                <p className="text-xs md:text-sm font-bold text-black text-center">
+                  \保管料が安い!/
+                </p>
+              </div>
+              {/* Speech Bubble - positioned above, different height */}
+              <div className="relative mb-6" style={{ width: '200px', height: '180px', marginLeft: '-30px' }}>
+                <Image
+                  src="/img/Voice5000_Badge_5.png"
+                  alt="Speech bubble 5"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+                {/* Text Content */}
+                <div className="absolute flex flex-col items-center justify-center px-4" style={{ top: '25%', bottom: '20%', left: '10%', right: '10%' }}>
+                  <p className="text-[10px] md:text-xs text-white mb-1 text-center leading-tight">
+                    他社から宅トラに切替えたら今までの半額になった!
+                  </p>
+                  <p className="text-[12px] md:text-[10px] text-white/80 text-center leading-tight">
+                    新宿区 / 30代男性
+                  </p>
+                </div>
+              </div>
+              {/* Character */}
+              <div className="relative w-32 h-40 md:w-40 md:h-48">
+                <Image
+                  src="/img/Voice5000_Person_5.png"
+                  alt="Customer testimonial 5"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
