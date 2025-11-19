@@ -1,9 +1,9 @@
-import Voice5000 from './components/Voice/Voice5000';
+import Product5001 from './components/Products/Product5001';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Voice5000/>
+      <Product5001/>
     </div>
   );
 }
