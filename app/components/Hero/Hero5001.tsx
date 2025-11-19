@@ -64,7 +64,9 @@ export default function Hero5001() {
                   {/* Left Oval - Cumulative Purchase Count */}
                   <div className="relative bg-green-600 rounded-full px-8 md:px-12 py-4 md:py-5 text-center text-white whitespace-nowrap">
                     <p className="text-lg md:text-xl lg:text-2xl font-bold "><span className="text-2xl md:text-3xl lg:text-4xl">4,300</span>万点以上</p>
-                    <span className="absolute -top-4 right-[20%] md:right-[25%] text-lg md:text-xl lg:text-2xl text-amber-800 font-bold">累計買取点数</span>
+                    <span
+                      className="absolute -top-4 right-[20%] md:right-[25%] text-[75px] md:text-xl lg:text-2xl text-white font-bold text-center [-webkit-text-stroke-width:1.5px]
+[-webkit-text-stroke-color:green]">累計買取点数</span>
                   </div>
 
                   {/* Right Oval - Stock Exchange */}
@@ -137,7 +139,7 @@ export default function Hero5001() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
