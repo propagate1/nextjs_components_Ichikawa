@@ -12,7 +12,7 @@ export default function Hero5002() {
   ];
 
   return (
-    <div className="w-full bg-white relative">
+    <div className="w-full bg-white relative font-['Yu_Mincho','Hiragino_Mincho_ProN','MS_PMincho',serif] overflow-hidden">
       {/* Woman Image - Full Right Side */}
       <div className="absolute top-0 -right-[20%] w-full  h-full z-0">
         <div className="relative w-full h-full">
