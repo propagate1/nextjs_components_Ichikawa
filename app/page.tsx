@@ -1,9 +1,9 @@
-import Product5001 from './components/Products/Product5001';
+import Achievement5001 from './components/Achievement/Achievement5001';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Product5001/>
+      <Achievement5001/>
     </div>
   );
 }
