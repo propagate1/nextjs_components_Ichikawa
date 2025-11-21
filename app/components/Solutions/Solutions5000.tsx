@@ -106,11 +106,6 @@ export default function Solutions5000() {
                         priority={item.id <= 2}
                       />
                     </div>
-
-                    {/* Label */}
-                    <p className="text-sm md:text-base lg:text-lg font-medium text-[#3d230b] text-center">
-                      {item.label}
-                    </p>
                   </div>
                 ))}
               </div>
