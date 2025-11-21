@@ -1,9 +1,9 @@
-import Product5001 from './components/Products/Product5001';
+import MiddleCTA5000 from './components/MiddleCTA/MiddleCTA5000';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Product5001/>
+      <MiddleCTA5000/>
     </div>
   );
 }
