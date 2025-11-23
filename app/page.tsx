@@ -1,9 +1,9 @@
-import Product5001 from './components/Products/Product5001';
+import Access5000 from './components/Access/Access5000';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Product5001/>
+      <Access5000/>
     </div>
   );
 }
