@@ -6,7 +6,7 @@ export default function About5001() {
   return (
     <div className="w-full bg-white py-8 md:py-12 lg:py-16 font-['Yu_Mincho','Hiragino_Mincho_ProN','MS_PMincho',serif]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-6 md:gap-8 lg:gap-12">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-6 md:gap-8 lg:gap-12">
           {/* Left Section: Text Content */}
           <div className="flex-1 lg:w-[45%] space-y-6 md:space-y-8 z-10">
             {/* Title */}
