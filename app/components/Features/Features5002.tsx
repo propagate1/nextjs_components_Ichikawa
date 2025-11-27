@@ -41,8 +41,8 @@ export default function Features5002() {
           {/* Main White Text - Two Lines (Upper Middle) */}
           <div className="absolute top-24 md:top-32 left-4 md:left-[35%]">
             <div className="flex flex-col gap-2 md:gap-3">
-              <p className="text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white drop-shadow-lg">
-                東京本社・市ヶ谷ライブショールームや全国のショールームにてご確認いただけます
+              <p className="text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white drop-shadow-lg md:leading-15">
+                東京本社・市ヶ谷ライブショールームや<br className=' hidden md:block'/>全国のショールームにてご確認いただけます
               </p>
             </div>
           </div>
