@@ -77,7 +77,8 @@ export default function About5002() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="relative">
           {/* Vertical connecting line */}
-          <div className="absolute left-12 md:left-20 lg:left-26 top-0 bottom-0 w-0.5 bg-gray-300 "></div>
+          <div className={`absolute left-12 md:left-20 lg:left-26 bottom-40 w-0.5 bg-gray-300 
+    ${openCardId === 1 ? "top-50" : "top-30"}`}></div>
 
           {/* Philosophy Sections */}
           <div className="space-y-8 md:space-y-12 lg:space-y-16">
