@@ -99,14 +99,14 @@ export default function Service5004() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 md:mb-12 ">
+        <div className="grid grid-cols-3 gap-1 lg:gap-4 mb-8 md:mb-12 ">
           {services.map((service) => (
             <div
               key={service.id}
               className="relative bg-white rounded-lg md:rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group"
             >
               {/* Image */}
-              <div className="relative w-full h-64 md:h-72 lg:h-80">
+              <div className="relative w-full h-22 md:h-52 lg:h-80">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -116,21 +116,21 @@ export default function Service5004() {
               </div>
 
               {/* Content */}
-              <div className=" absolute bottom-0 right-0 px-4 py-2 md:p-4 text-white font-bold">
+              <div className=" absolute bottom-0 right-0 p-1 md:px-4 md:py-2 md:p-4 text-white font-bold">
                 {/* Title */}
-                <h3 className="text-xs md:text-sm">
+                <p className="text-[4px] md:text-xs lg:text-sm">
                   {service.title}
-                </h3>
+                </p>
 
                 {/* Subtitle */}
-                <p className="text-md md:text-lg mb-2">
+                <p className="text-[5px] md:text-md lg:text-lg mb-0 md:mb-2">
                   {service.subtitle}
                 </p>
 
-                <div className=' border-t-4 border-white border-dotted mb-2'/>
+                <div className='border-t-1 md:border-t-4 border-white border-dotted mb-1 md:mb-2'/>
 
                 {/* Description */}
-                <p className="text-xs md:text-xs lg:text-sm mb-4 md:mb-6 leading-relaxed">
+                <p className="text-[4px] md:text-[10px] lg:text-sm mb-0 md:mb-2 lg:mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
@@ -139,7 +139,7 @@ export default function Service5004() {
                   {service.hashtags.map((hashtag, index) => (
                     <span
                       key={index}
-                      className="text-xs px-2 mb-1"
+                      className="text-[3px] md:text-[8px] lg:text-xs px-1 md:px-2 mb-0 md:mb-1"
                     >
                       {hashtag}
                     </span>
