@@ -68,12 +68,12 @@ const [openCardId, setOpenCardId] = useState<number | null>(null);
             </div>
 
             {/* Main Title */}
-            <h1 className="text-center lg:text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-blue-900 leading-tight">
+            <h1 className="text-left lg:text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-blue-900 leading-tight">
               えがく
             </h1>
 
             {/* Subtitle */}
-            <h2 className=" text-center lg:text-left text-sm md:text-base font-medium text-blue-900">
+            <h2 className=" text-left lg:text-left text-sm md:text-base font-medium text-blue-900">
               お客さまの夢を描きおこす
             </h2>
 
@@ -97,7 +97,7 @@ const [openCardId, setOpenCardId] = useState<number | null>(null);
           </div>
 
           {/* Feature Cards */}
-          <button className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <button className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mx-auto">
             {features.map((feature) => (
               <div
                 key={feature.id}
