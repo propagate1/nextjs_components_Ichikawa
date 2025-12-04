@@ -1,9 +1,9 @@
-import Service5003 from './components/Service/Service5003';
+import FAQ5001 from './components/FAQ/FAQ5001';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Service5003/>
+      <FAQ5001/>
     </div>
   );
 }
