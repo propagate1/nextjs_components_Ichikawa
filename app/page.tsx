@@ -1,9 +1,9 @@
-import MiddleCTA5000 from './components/MiddleCTA/MiddleCTA5000';
+import Features5011 from './components/Features/Features5011';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <MiddleCTA5000/>
+      <Features5011/>
     </div>
   );
 }
