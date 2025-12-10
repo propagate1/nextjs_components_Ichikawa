@@ -1,9 +1,9 @@
-import Voice5002 from './components/Voice/Voice5002';
+import Features5011 from './components/Features/Features5011';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Voice5002/>
+      <Features5011/>
     </div>
   );
 }
