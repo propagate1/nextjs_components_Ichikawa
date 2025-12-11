@@ -1,9 +1,9 @@
-import Solutions5001 from './components/Solutions/Solutions5001';
+import Features5011 from './components/Features/Features5011';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Solutions5001/>
+      <Features5011/>
     </div>
   );
 }
