@@ -14,9 +14,9 @@ export default function Header5008({
 }: Header5008Props) {
 
   return (
-    <div className="relative z-20 bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex items-center justify-between py-3 md:py-4 lg:py-5">
+    <div className="relative z-20 bg-white rounded-b-4xl shadow-2xl">
+      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <div className="relative w-20 h-8 md:w-30 md:h-10 lg:w-48 lg:h-12">
             <Image
@@ -30,13 +30,13 @@ export default function Header5008({
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4 lg:gap-6 font-bold">
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">トップ</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">クイックティーチャーとは?</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">3つの特徴</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">活用事例</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">ユーザーの声</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">使い方のヒント</a>
-            <a className="text-[10px] lg:text-xs hover:text-orange-500 transition">よくある質問</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">トップ</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">クイックティーチャーとは?</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">3つの特徴</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">活用事例</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">ユーザーの声</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">使い方のヒント</a>
+            <a className="text-[10px] lg:text-xs xl:text-lg hover:text-orange-500 transition">よくある質問</a>
           </nav>
 
           {/* Mobile menu button */}
