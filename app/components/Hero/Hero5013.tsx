@@ -92,25 +92,24 @@ export default function Hero5013() {
         <div className=" absolute bottom-0 z-10 w-full p-6">
           <div className="mx-auto w-full flex flex-col lg:flex-row items-start lg:items-end justify-between">
             {/* Main Slogan Text */}
-            <div className="relative w-full h-24 md:h-32 mb-12 lg:mb-0">
-              <Image
-                src="/img/Hero5013_Letter_1.png"
-                alt="大学生と社会がもっと近くなる"
-                fill
-                className=" hidden lg:block object-contain object-left"
-                priority
-              /><Image
-                src="/img/Hero5013_Letter_2.png"
-                alt="大学生と社会がもっと近くなる"
-                fill
-                className=" block lg:hidden object-contain object-left"
-                priority
-              />
+            <div className="relative w-full h-24 md:h-32 mb-12 lg:mb-0 text-white font-semibold">
+              <p className=' text-xs mb-4'>
+                さあ、社会へ。次の一歩をふみだそう。
+              </p>
+              <div className=' flex flex-col lg:flex-row'>
+                <p className=' text-4xl md:text-5xl flex items-center mb-4 lg:mb-0'>
+                  大学生
+                  <span className=' text-xl mx-2'>と</span>
+                  社会
+                  <span className=' text-xl ml-2'>が</span>
+                </p>                
+                <p className=' text-xl flex items-center'>もっと近くなる。</p>
+              </div>
             </div>
 
             {/* Call to Action Button */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center">
-              <button className="bg-white hover:bg-gray-100 text-black px-6 py-3 md:py-4 rounded-lg font-semibold text-sm md:text-base lg:text-lg transition-colors whitespace-nowrap">
+              <button className="bg-white hover:bg-gray-100 text-black px-6 py-3 md:py-4 rounded-lg font-semibold text-sm md:text-base transition-colors whitespace-nowrap">
                 企業のみなさまへ
               </button>
             </div>

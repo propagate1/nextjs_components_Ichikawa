@@ -36,44 +36,45 @@ export default function Header5013({
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex flex-row items-end justify-center gap-4 xl:gap-10 mt-3">
+          <nav className="hidden xl:flex flex-row items-center justify-center gap-4 xl:gap-10">
             <a
               href="#"
-              className="text-white text-base font-medium hover:text-yellow-400 transition-colors"
+              className="text-white text-xs font-medium hover:text-yellow-400 transition-colors"
             >
               まゆCafeについて
             </a>
             <a
               href="#"
-              className="text-white text-sm xl:text-base font-medium hover:text-yellow-400 transition-colors"
+              className="text-white text-xs font-medium hover:text-yellow-400 transition-colors"
             >
               インフォメーションボード
             </a>
             <a
               href="#"
-              className="text-white text-sm xl:text-base font-medium hover:text-yellow-400 transition-colors"
+              className="text-white text-xs font-medium hover:text-yellow-400 transition-colors"
             >
               キャリアセンター
             </a>
             <a
               href="#"
-              className="text-white text-sm xl:text-base font-medium hover:text-yellow-400 transition-colors"
+              className="flex items-center justify-start text-white text-xs font-medium hover:text-yellow-400 transition-colors"
             >
               企業のみなさまへ
+              <HiDocumentDuplicate className="w-4 h-4 " />
             </a>
-          </nav>
 
-          {/* Desktop Buttons */}
-          <div className="hidden xl:flex items-center gap-3">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-sm xl:text-base transition-colors flex items-center gap-2">
-              <FaTelegram className="w-6 h-6 " />
-              <span>参加申込</span>
-            </button>
-            <button className="bg-gray-600 hover:bg-gray-700 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-sm xl:text-base transition-colors flex items-center gap-2">
-              <User className="w-6 h-6" />
-              <span>ログイン</span>
-            </button>
-          </div>
+            {/* Desktop Buttons */}
+            <div className="hidden xl:flex items-center gap-3">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-xs  transition-colors flex items-center gap-2">
+                <FaTelegram className="w-4 h-4 " />
+                <span>参加申込</span>
+              </button>
+              <button className="bg-gray-600 hover:bg-gray-700 text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold text-xs transition-colors flex items-center gap-2">
+                <User className="w-4 h-4" />
+                <span>ログイン</span>
+              </button>
+            </div>
+          </nav>
 
           {/* Mobile Menu Button */}
           <button
