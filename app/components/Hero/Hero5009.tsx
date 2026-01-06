@@ -13,7 +13,7 @@ export default function Hero5009() {
 
   return (
 
-    <div className="w-full relative flex flex-col bg-gradient-to-b from-blue-50 to-white overflow-hidden">
+    <div className="w-full min-h-screen relative flex flex-col bg-gradient-to-b from-blue-50 to-white overflow-hidden">
       {/* Header */}
       <Header5009
         isMobileMenuOpen={isMobileMenuOpen}
@@ -79,7 +79,7 @@ export default function Hero5009() {
                 {/* Statistics - Mobile/Tablet Layout */}
                 <div className="flex flex-col sm:flex-row gap-4 lg:hidden">
                   {/* Video */}
-                  <div className="flex flex-1 relative min-h-[300px]">
+                  <div className="flex flex-1 relative min-h-[250px]">
                     {/* Background Image */}
                     <div className="absolute inset-0 w-full h-full">
                       <video
@@ -100,7 +100,7 @@ export default function Hero5009() {
                     </div>
 
                     {/* Annual Calls Statistic - Top Left */}
-                    <div className="absolute top-8 lg:top-12 left-4 lg:left-6 flex flex-row items-end justify-center bg-white text-sky-500 font-bold rounded-xl px-4 shadow-lg z-10 text-md ">
+                    <div className="absolute top-2 md:top-0 left-4 lg:left-6 flex flex-row items-end justify-center bg-white text-sky-500 font-bold rounded-xl px-4 shadow-lg z-10 text-md ">
                       <p className="">年間通話</p>
                       <p className="text-2xl lg:text-4xl text-orange-500">
                         43<span className=' text-md lg:text-lg'>億</span><span className=' text-md lg:text-lg text-sky-500'>秒</span>
@@ -109,7 +109,7 @@ export default function Hero5009() {
                     </div>
 
                     {/* Company Count Statistic - Top Right */}
-                    <div className="absolute top-12 lg:top-20 right-4 lg:right-6 p-2 bg-white rounded-full flex items-center gap-3 z-10">
+                    <div className="absolute top-8 md:top-0 right-4 lg:right-6 p-2 bg-white rounded-full flex items-center gap-3 z-10">
                       <div className="w-12 h-12 lg:w-30 lg:h-30 p-4 relative">
                         <Image
                           src="/img/Hero5009_Badge_1.png"
@@ -128,7 +128,7 @@ export default function Hero5009() {
                     </div>
 
                     {/* Chatbot Icon - Bottom Right */}
-                    <div className="absolute bottom-15 -right-5 w-20 h-20">
+                    <div className="absolute bottom-8 md:bottom-0 -right-5 w-20 h-20">
                       <Image
                         src="/img/Hero5009_Icon_1.png"
                         alt="24/7 Chatbot Support"
