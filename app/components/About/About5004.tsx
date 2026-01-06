@@ -21,14 +21,13 @@ export default function About5004() {
         <div className="relative w-full py-4 md:py-16 lg:py-20 overflow-hidden">
           {/* Main Slogan */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 mt-20 md:mt-2 relative z-10">
-            <div className="relative w-full h-24 md:h-32 lg:h-40 mb-8 md:mb-12">
-              <Image
-                src="/img/About5004_Letter_1.png"
-                alt="今知りたいを、すぐにサポート"
-                fill
-                className="object-contain object-center"
-                priority
-              />
+            <div className="text-center text-3xl md:text-4xl lg:text-5xl text-amber-600 font-bold mb-8 md:mb-12 leading-12 md:leading-16 lg:leading-20  tracking-wide md:tracking-widest">
+              <p >
+                「今知りたい」を、
+              </p>
+              <p>
+                すぐにサポート
+              </p>
             </div>
             {/* Service Description */}
             <div className="text-center mb-8 md:mb-12 lg:mb-16 font-bold">
