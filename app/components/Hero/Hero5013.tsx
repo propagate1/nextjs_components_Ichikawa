@@ -87,7 +87,7 @@ export default function Hero5013() {
       />
 
       {/* Content */}
-      <div className="relative z-10 w-full min-h-screen">
+      <div className="relative z-10 w-full h-full">
         {/* Hero Content Section */}
         <div className=" absolute bottom-0 z-10 w-full p-6">
           <div className="mx-auto w-full flex flex-col lg:flex-row items-start lg:items-end justify-between">

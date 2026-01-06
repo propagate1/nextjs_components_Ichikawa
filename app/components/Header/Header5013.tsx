@@ -15,7 +15,7 @@ export default function Header5013({
 }: Header5013Props) {
 
   return (
-    <div className="w-full relative mx-auto  z-50">
+    <div className="w-full relative mx-auto min-h-screen  z-50">
       {/* Header Section */}
       <header className="relative z-20 w-full px-4 py-8">
         <div className="mx-auto flex items-start justify-between">
