@@ -50,7 +50,7 @@ export default function Features5003() {
             return (
               <div
                 key={index}
-                className=" bg-gray-100 relative flex flex-col lg:flex-row items-start gap-6 md:gap-8 lg:gap-12"
+              className={` bg-gray-100 relative flex  ${imageOnLeft ? "flex-col" : "flex-col-reverse" } lg:flex-row items-center lg:items-start gap-6 md:gap-8 lg:gap-12`}
               >
                 {/* Image Section - Left for second feature, Right for first and third */}
                 {imageOnLeft && (
