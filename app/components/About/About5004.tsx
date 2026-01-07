@@ -44,10 +44,10 @@ export default function About5004() {
                   学習サポートが受けられるサービス</span>
                 <span className='text-md md:text-lg lg:text-xl xl:text-2xl '>です!</span>
               </p>
-              <p className="text-black text-base md:text-lg lg:text-xl xl:text-2xl mb-2 md:mb-3 leading-8 md:leading-10">
+              <p className="text-black text-base md:text-lg lg:text-xl xl:text-2xl mb-2 md:mb-3 flex flex-col leading-8 md:leading-10">
                 解説してほしい問題を<br />
-                <p>スマートフォンやタブレットから送ると、</p>
-                <p>認定講師が徹底サポートします!</p>
+                <span>スマートフォンやタブレットから送ると、</span>
+                <span>認定講師が徹底サポートします!</span>
               </p>
             </div>
           </div>
