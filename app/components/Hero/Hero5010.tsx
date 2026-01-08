@@ -3,7 +3,16 @@ import Image from 'next/image';
 
 export default function Hero5010() {
   return (
-    <div className="w-full relative overflow-hidden bg-gradient-to-b from-white via-blue-50 to-white min-h-screen">
+    <div className="w-full relative overflow-hidden bg-gradient-to-b from-white via-blue-50 to-white">
+      <div className="absolute inset-0 z-0">
+              <Image
+                src="/img/Hero5010_Bg_1.png"
+                alt="Background"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
       {/* Header Section */}
       <div className="relative z-20 bg-white border-b border-blue-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
@@ -27,7 +36,7 @@ export default function Hero5010() {
       </div>
 
       {/* Main Content Section */}
-      <div className="relative z-10 py-8 md:py-12 lg:py-16">
+      <div className="relative z-10 mb-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="w-full flex flex-col lg:flex-row items-start lg:items-end gap-8">
             {/* Left Section: Text Content */}
@@ -45,7 +54,7 @@ export default function Hero5010() {
               {/* Promotional Box */}
               <div className='flex flex-row items-center justify-center'>
                 <div>
-                  <div className=" flex flex-col items-center justify-between border-2 border-purple-300 rounded-lg md:rounded-xl p-2 bg-gradient-to-br from-purple-50 to-pink-100 shadow-md">
+                  <div className=" flex flex-col items-center justify-between border-2 border-purple-300 rounded-lg md:rounded-xl py-4 px-8 md:px-16 bg-gradient-to-br from-purple-50 to-pink-100 shadow-md">
                     {/* Transaction Fees Label */}
                     <div className="bg-blue-900 text-white rounded-full px-2 py-1 md:px-6 md:py-3 mb-4 md:mb-6 inline-block">
                       <span className="text-sm md:text-base lg:text-lg font-bold">取引手数料</span>
@@ -131,7 +140,7 @@ export default function Hero5010() {
             <div className="hidden flex-1 relative lg:block">
               <div className="flex flex-col lg:flex-row items-start justify-center">
                 {/* Woman Image */}
-                <div className="relative lg:w-[450px] lg:h-[500px] flex-shrink-0 ">
+                <div className="relative lg:w-[400px] lg:h-[500px] flex-shrink-0 ">
                   <Image
                     src="/img/Hero5010_Woman_1.png"
                     alt="Smiling woman pointing"
@@ -176,16 +185,6 @@ export default function Hero5010() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
-        {/* Diagonal Blue Shape - Behind woman */}
-        <div className="absolute top-1/4 right-0 w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] bg-blue-200 opacity-30 transform rotate-45 rounded-full blur-3xl"></div>
-        {/* Pink Accent */}
-        <div className="absolute bottom-1/4 left-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-pink-200 opacity-20 transform -rotate-12 rounded-full blur-3xl"></div>
-        {/* Green Accent */}
-        <div className="absolute top-1/2 right-1/4 w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-green-200 opacity-20 transform rotate-12 rounded-full blur-3xl"></div>
       </div>
     </div>
   );
