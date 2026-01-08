@@ -46,7 +46,7 @@ export default function Challenges5002() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
 
         {/* Symptoms List */}
-        <div className="space-y-12 md:space-y-16 lg:space-y-20">
+        <div className="space-y-6">
           {symptoms.map((symptom) => (
             <div
               key={symptom.id}
@@ -55,7 +55,7 @@ export default function Challenges5002() {
             >
               {/* Image Section */}
               <div className="w-full lg:w-1/2 flex-shrink-0">
-                <div className="relative w-full aspect-[4/3] rounded-lg md:rounded-xl overflow-hidden">
+                <div className="relative w-full aspect-[2/1] rounded-lg md:rounded-xl overflow-hidden">
                   <Image
                     src={symptom.image}
                     alt={`症状 ${symptom.number} ${symptom.title}`}
