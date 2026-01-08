@@ -13,7 +13,7 @@ export default function Hero5009() {
 
   return (
 
-    <div className="w-full min-h-screen relative flex flex-col bg-gradient-to-b from-blue-50 to-white overflow-hidden">
+    <div className="w-full  relative flex flex-col bg-gradient-to-b from-blue-50 to-white overflow-hidden">
       {/* Header */}
       <Header5009
         isMobileMenuOpen={isMobileMenuOpen}
@@ -22,7 +22,7 @@ export default function Hero5009() {
 
       {/* Content Container */}
       {!isMobileMenuOpen && (
-        <div className="relative z-10 flex-1 flex flex-col ">
+        <div className="relative z-10 flex-1 flex flex-col mt-2 ">
           <div className="absolute top-50 -left-30 lg:-top-40 xl:-top-40 lg:-left-150 xl:-left-100 w-150 h-150 lg:w-250 lg:h-250 ">
             <Image
               src="/img/Hero5009_Bg_2.webp"
@@ -65,11 +65,11 @@ export default function Hero5009() {
                 </div>
 
                 {/* Main Headline */}
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-sky-500 italic">
-                  <span className="block">あらゆる<span className=' text-sky-700'>架電</span>業務<span className=' text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>を</span></span>
-                  <p className="flex flex-row items-center text-sky-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl gap-8 mt-4">
+                <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold text-sky-500 italic">
+                  <span className="block">あらゆる<span className=' text-sky-700'>架電</span>業務<span className='text-3xl lg:text-4xl xl:text-5xl'>を</span></span>
+                  <p className="flex flex-row items-center text-sky-700 text-5xl md:text-6xl lg:text-7xl xl:text-8xl gap-4 mt-4">
                     自動化
-                    <span className="not-italic text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-black leading-relaxed">
+                    <span className="not-italic text-base md:text-lg lg:text-xl xl:text-3xl text-black leading-relaxed">
                       コア業務に集中できる<br className="block" />
                       体制をソクコムで。
                     </span>
@@ -81,7 +81,7 @@ export default function Hero5009() {
                   {/* Video */}
                   <div className="flex flex-1 relative min-h-[250px]">
                     {/* Background Image */}
-                    <div className="absolute inset-0 w-full h-full">
+                    <div className="absolute inset-0 -left-4 w-[320px] md:w-full h-full">
                       <video
                         src="https://sokucom.cloud/websys/wp-content/themes/sokucom/2025/assets/images/mainvisual_video.mp4"
                         autoPlay
@@ -109,8 +109,8 @@ export default function Hero5009() {
                     </div>
 
                     {/* Company Count Statistic - Top Right */}
-                    <div className="absolute top-8 md:top-0 right-4 lg:right-6 p-2 bg-white rounded-full flex items-center gap-3 z-10">
-                      <div className="w-12 h-12 lg:w-30 lg:h-30 p-4 relative">
+                    <div className="absolute top-0 -right-4 lg:right-6 p-2 bg-white rounded-full flex items-center gap-3 z-10">
+                      <div className="w-16 h-16 md:w-24 md:h-24 lg:w-30 lg:h-30 p-4 relative">
                         <Image
                           src="/img/Hero5009_Badge_1.png"
                           alt=""
@@ -120,15 +120,15 @@ export default function Hero5009() {
                         />
                       </div>
                       <div className="absolute top-0 left-0  z-10 w-full h-full flex flex-col items-center justify-center text-sky-900 px-4 text-center tracking-widest" style={{ paddingTop: '20%', paddingBottom: '8%' }}>
-                        <span className=" font-bold text-[4px] lg:text-[12px]">累計社数<br />
-                          <span className="text-[12px] sm:text-sm  lg:text-3xl">1,100</span><br />
-                          <span className=" text-[8px] lg:text-sm">社
+                        <span className=" font-bold text-[6px] md:text-[12px] -tracking-tight">累計社数<br />
+                          <span className="text-[12px] sm:text-sm md:text-2xl lg:text-3xl">1,100</span><br />
+                          <span className=" text-[8px] md:text-[12px]">社
                           </span></span>
                       </div>
                     </div>
 
                     {/* Chatbot Icon - Bottom Right */}
-                    <div className="absolute bottom-8 md:bottom-0 -right-5 w-20 h-20">
+                    <div className="absolute bottom-8 md:bottom-0 -right-8 w-20 h-20 md:w-28 md:h-28">
                       <Image
                         src="/img/Hero5009_Icon_1.png"
                         alt="24/7 Chatbot Support"
@@ -142,7 +142,7 @@ export default function Hero5009() {
                 </div>
 
                 {/* Call to Action Button */}
-                <button className="w-full lg:w-3/5 bg-white border-2 border-green-500 text-green-600 px-6 lg:px-8 py-3 sm:py-4 md:py-5 rounded-lg sm:rounded-xl text-sm lg:text-md xl:text-xl font-bold hover:bg-green-50 transition-colors flex items-center justify-center gap-2 sm:gap-3">
+                <button className="w-full lg:w-3/5 bg-white border-2 border-green-500 text-green-600 px-6 lg:px-8 py-3 sm:py-4 md:py-5 rounded-lg sm:rounded-xl text-sm lg:text-md xl:text-xl font-bold hover:bg-green-50 transition-colors flex items-center justify-center gap-2 sm:gap-3 mb-8">
                   <span>ロボットコールを体験!</span>
                   <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
