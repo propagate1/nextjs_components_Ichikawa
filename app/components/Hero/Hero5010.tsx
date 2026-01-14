@@ -86,7 +86,7 @@ export default function Hero5010() {
                       </div>
                       <div className=' flex flex-row'>
                         {/* Badge 2 - Minkabu */}
-                        <div className="relative w-14 h-14 md:w-20 md:h-20 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="relative w-14 h-14  md:w-20 md:h-20 lg:w-24 lg:h-24 flex-shrink-0">
                           <Image
                             src="/img/Hero5010_Badge_2.png"
                             alt="Minkabu FX Company Ranking"
@@ -95,7 +95,7 @@ export default function Hero5010() {
                           />
                         </div>
                         {/* Badge 3 - Minkabu */}
-                        <div className="relative w-14 h-14 md:w-20 md:h-20 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="relative w-14 h-14 md:w-20 md:h-20 lg:w-24 lg:h-24 flex-shrink-0">
                           <Image
                             src="/img/Hero5010_Badge_2.png"
                             alt="Minkabu FX Company Ranking"
