@@ -66,22 +66,19 @@ export default function Features5004() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 relative z-30">
         {/* Main Slogan Section */}
         <div className="text-center mb-8 md:mb-12 lg:mb-16">
-          <h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-relaxed">
-            <span>MAXHUBを</span>
+          <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-relaxed">
+            <span>MAXHUBを</span><br className=" block md:hidden"/>
             <span
-              className="bg-white text-black px-3 md:px-4 lg:px-5 py-1 md:py-2 mx-1 md:mx-2 inline-block"
-              style={{
-                clipPath: "polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%)",
-              }}
+              className="bg-white text-black px-3 md:px-4 lg:px-5 py-1 md:py-2 mx-1 md:mx-2 inline-block [clip-path:polygon(5%_0%,_100%_0%,_95%_100%,_0%_100%)]"             
             >
               全国9拠点のショールーム
-            </span>
-            <span>で体感できます!</span>
+            </span><br className=" block md:hidden"/>
+            <span>で体感できます!</span><br className=" block md:hidden"/>
           </h2>
         </div>
 
         {/* Showroom Images - Single horizontal row on desktop, responsive grid on mobile */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-3 md:gap-4 lg:gap-3 xl:gap-4 z-30">
+        <div className="grid grid-cols-3 lg:grid-cols-9 gap-4 lg:gap-3 xl:gap-4 z-30">
           {showrooms.map((showroom) => (
             <div key={showroom.id} className="flex flex-col items-center">
               {/* Showroom Image */}
@@ -96,7 +93,7 @@ export default function Features5004() {
               </div>
 
               {/* City Name Label */}
-              <p className="text-xs md:text-sm lg:text-base font-medium text-gray-900 text-center">
+              <p className="text-base md:text-lg font-medium text-gray-900 text-center">
                 {showroom.city}
               </p>
             </div>
