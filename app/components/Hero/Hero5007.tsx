@@ -19,8 +19,7 @@ export default function Hero5007() {
 
       {/* Content Container */}
       <div className="relative z-10 flex-1 flex flex-col items-center max-w-7xl md:m-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-20">
-        <div className="flex flex-col items-center w-full">
-          
+        <div className="flex flex-col items-center w-full">          
           {/* Top Blue Banner */}
           <div className="w-full max-w-2xl bg-gradient-to-r from-[#27469e] via-[#397ec0] to-[#27469e] px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 md:py-4 lg:py-5 rounded-tr-2xl rounded-bl-2xl lg:rounded-tr-4xl lg:rounded-bl-4xl">
             <div className="text-white text-center">
@@ -105,9 +104,9 @@ export default function Hero5007() {
           </div>
 
           {/* PC Layout: Portraits with content between them */}
-          <div className="hidden relative md:flex flex-row items-end justify-center gap-4 xl:gap-6 w-full max-w-6xl">
+          <div className="hidden md:flex flex-row items-end justify-center gap-4 xl:gap-6 w-full max-w-6xl mt-10">
             {/* Left Man */}
-            <div className="absolute w-100 h-90 xl:h-100 md:-left-48 xl:-left-56 -bottom-30">
+            <div className="absolute w-120 h-100 xl:h-120 md:-left-48 xl:-left-56 bottom-0">
               <Image
                 src="/img/Hero5007_Man_1.png"
                 alt="Businessman with red tie"
@@ -162,7 +161,7 @@ export default function Hero5007() {
             </div>
 
             {/* Right Man */}
-            <div className="absolute w-100 h-90 xl:h-100 -right-48 xl:-right-56 -bottom-30">
+            <div className="absolute w-120 h-100 xl:h-120 -right-48 xl:-right-56 bottom-0">
               <Image
                 src="/img/Hero5007_Man_2.png"
                 alt="Businessman with blue tie"
