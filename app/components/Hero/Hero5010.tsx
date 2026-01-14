@@ -42,33 +42,33 @@ export default function Hero5010() {
             {/* Left Section: Text Content */}
             <div className="flex-1 flex flex-col items-center justify-center gap-4 m-auto lg:m-0">
               {/* Headline */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-xl md:text-2xl lg:text-3xl text-blue-900 font-bold mb-2 md:mb-3">
+              <div className="text-center lg:text-left mt-6">
+                <h1 className="text-2xl lg:text-3xl text-blue-900 font-bold mb-2 md:mb-3">
                   <span className="inline-block">――FXはじめるなら――</span>
                 </h1>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl text-blue-900 font-bold text-center">
+                <h2 className="text-4xl text-blue-900 font-bold text-center">
                   GMOクリック証券
                 </h2>
               </div>
 
               {/* Promotional Box */}
-              <div className='flex flex-row items-center justify-center'>
+              <div className=' grid grid-cols-2 lg:flex lg:flex-row items-center justify-center py-2'>
                 <div>
-                  <div className=" flex flex-col items-center justify-between border-2 border-purple-300 rounded-lg md:rounded-xl py-4 px-8 md:px-16 bg-gradient-to-br from-purple-50 to-pink-100 shadow-md">
+                  <div className=" flex flex-col items-center justify-between border-2 border-purple-300 rounded-lg md:rounded-xl py-2 md:py-4 px-4 md:px-16 bg-gradient-to-br from-purple-50 to-pink-100 shadow-md">
                     {/* Transaction Fees Label */}
                     <div className="bg-blue-900 text-white rounded-full px-2 py-1 md:px-6 md:py-3 mb-4 md:mb-6 inline-block">
-                      <span className="text-sm md:text-base lg:text-lg font-bold">取引手数料</span>
+                      <span className="text-base md:text-lg font-bold">取引手数料</span>
                     </div>
 
                     {/* Main Promotional Text */}
                     <div className=" text-center">
-                      <p className="text-2xl md:text-5xl lg:text-6xl text-blue-900 font-bold mb-2 md:mb-3 leading-tight">
+                      <p className="text-3xl md:text-5xl lg:text-6xl text-blue-900 font-bold mb-2 md:mb-3 leading-tight">
                         完全無料!
                       </p>
-                      <p className="text-sm md:text-lg lg:text-xl text-blue-900 font-semibold">
+                      <p className="text-lg lg:text-xl text-blue-900 font-semibold">
                         FX・株式・投信
                       </p>
-                      <p className="text-xs md:text-sm text-gray-600">
+                      <p className="text-sm text-gray-600">
                         ※電話注文は除く
                       </p>
                     </div>
@@ -76,7 +76,7 @@ export default function Hero5010() {
                   <div className=' block lg:hidden mt-4'>
                     <div className="flex flex-col items-center">
                       {/* Badge 1 - Oricon */}
-                      <div className="relative w-12 h-12 flex-shrink-0">
+                      <div className="relative w-14 h-14 md:w-20 md:h-20 flex-shrink-0">
                         <Image
                           src="/img/Hero5010_Badge_1.png"
                           alt="Oricon Customer Satisfaction Award"
@@ -86,7 +86,7 @@ export default function Hero5010() {
                       </div>
                       <div className=' flex flex-row'>
                         {/* Badge 2 - Minkabu */}
-                        <div className="relative w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="relative w-14 h-14 md:w-20 md:h-20 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <Image
                             src="/img/Hero5010_Badge_2.png"
                             alt="Minkabu FX Company Ranking"
@@ -95,7 +95,7 @@ export default function Hero5010() {
                           />
                         </div>
                         {/* Badge 3 - Minkabu */}
-                        <div className="relative w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                        <div className="relative w-14 h-14 md:w-20 md:h-20 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <Image
                             src="/img/Hero5010_Badge_2.png"
                             alt="Minkabu FX Company Ranking"
@@ -109,12 +109,12 @@ export default function Hero5010() {
                 </div>
 
                 <div className=' block lg:hidden'>
-                  <div className="relative w-[150px] h-[160px] sm:w-[200px] sm:h-[250px] flex-shrink-0 ">
+                  <div className=" absolute top-20 md:top-30 -right-16 md:-right-10 w-4/5 h-full">
                     <Image
                       src="/img/Hero5010_Woman_1.png"
                       alt="Smiling woman pointing"
                       fill
-                      className="object-cover object-center"
+                      className="object-contain object-right"
                       priority
                     />
                   </div>
@@ -153,7 +153,7 @@ export default function Hero5010() {
                 {/* Award Badges Stack - Vertical on desktop, horizontal on mobile */}
                 <div className="flex flex-row lg:flex-col gap-3 md:gap-4 lg:gap-6 items-center lg:items-start">
                   {/* Badge 1 - Oricon */}
-                  <div className="relative w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                  <div className="relative w-14 h-14 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
                     <Image
                       src="/img/Hero5010_Badge_1.png"
                       alt="Oricon Customer Satisfaction Award"
@@ -163,7 +163,7 @@ export default function Hero5010() {
                   </div>
 
                   {/* Badge 2 - Minkabu */}
-                  <div className="relative w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                  <div className="relative w-14 h-14 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
                     <Image
                       src="/img/Hero5010_Badge_2.png"
                       alt="Minkabu FX Company Ranking"
@@ -172,7 +172,7 @@ export default function Hero5010() {
                     />
                   </div>
                   {/* Badge 3 - Minkabu */}
-                  <div className="relative w-12 h-12 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                  <div className="relative w-14 h-14 md:w-16 md:h-16 lg:w-24 lg:h-24 flex-shrink-0">
                     <Image
                       src="/img/Hero5010_Badge_2.png"
                       alt="Minkabu FX Company Ranking"
